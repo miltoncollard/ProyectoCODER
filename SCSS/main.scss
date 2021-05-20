@@ -1,0 +1,319 @@
+.index_main{
+    height: 290px;
+}
+/*
+                                        PAGE - MAIN GALLERY DESK
+*/
+#main__contenedor__gallery {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.main__gallery___container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px,auto);
+    gap: 50px;
+    padding: 50px;
+    grid-auto-flow: dense;
+}
+.gallery__item:nth-child(7){
+    grid-column-start: span 3;
+}
+.gallery__item:nth-child(20){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(12){
+    grid-column-start: span 2;
+}
+.gallery__item:nth-child(2){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(8){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(9){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(11){
+    grid-row-start: span 2;
+}
+.gallery__item:nth-child(16){
+    grid-row-start: span 2;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.5);
+}
+
+.gallery__img:hover{
+    filter: opacity(1);
+}
+
+/*
+                                        PAGE - MAIN SERVICES DESK
+*/
+#main__ontenedorServices {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.main__contenidoServices {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*Services 1 =====================*/
+    .main__services_1{
+        display: flex;
+        text-align: left;
+        .main__service1_text{
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px;  
+                color: rgb(175, 135, 2);
+            }
+        }
+        .carousel{
+            width: 70%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: 500px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    /*Services 2 =====================*/
+    .main__services_2{
+        display: flex;
+        text-align: left;
+        .main__service2_text{
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px; 
+                color: rgb(175, 135, 2); 
+            }
+        }
+        .carousel{
+            width: 70%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: 500px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+    /*Services 3 =====================*/
+    .main__services_3{
+        display: flex;
+        text-align: left;
+        .main__service3_text{
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px;  
+                color: rgb(175, 135, 2);
+            }
+        }
+        .carousel{
+            width: 70%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: 500px;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*
+                                        PAGE - MAIN ABOUT
+*/
+#contenedor_about h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    padding-bottom: 25px;
+    font-size: 50px;
+    font-family: 'Zilla Slab Highlight';
+    color: rgb(245, 202, 63);
+}
+.contenido_about {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.text_descripcion{ 
+    
+    p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(175, 135, 2); 
+    font-family: 'Thasadith';
+    font-size: 20px;
+    }
+}
+
+.video_presentacion {
+    padding-top: 150px;
+}
+
+/*
+                                        PAGE - MAIN CONTACT
+ */
+#contenedor {
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    margin: 100px auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 25px;
+        color: rgb(204, 158, 6);
+    }
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .info,
+.contenido .formulario {
+    width: 50%;
+}
+
+/* Estilos Info */
+.info {
+    padding-left: 10px;
+    margin: auto;
+    margin-left: 100px;
+    .col {
+        width: 100%;
+        display: flex;
+        margin-bottom: 15px;
+        font-size: 16px;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-bottom: 40px;
+
+        .icono {
+            color: rgb(175, 135, 2);
+            margin-right: 10px;
+        }
+
+        p {
+            color: rgb(199, 199, 199);
+        }
+    }
+
+    .redes-sociales {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 25px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            background: rgba(206, 158, 0, 0.637);
+            color: rgb(187, 187, 187);
+            margin: 5px;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 50%;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);
+        }
+    }
+}
+
+/*Estilos Formulario */
+
+.formulario {
+    padding-left: 10px;
+
+    textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 150px;
+        max-height: 200px;
+    }
+}
+.formulario input[type='text'],
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-weight: 400;
+    outline: 0;
+}
+
+/* -----------------------------------------------------------------------------------------------------
+                                              CSS - MAIN TABLET
+----------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width:700px){
+
+}
+
+/* -----------------------------------------------------------------------------------------------------
+                                              CSS - MAIN MOBILE
+----------------------------------------------------------------------------------------------------- */
+@media only screen and (mmax-width:699px){
+
+}
