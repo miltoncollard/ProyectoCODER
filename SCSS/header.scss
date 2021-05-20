@@ -50,25 +50,16 @@ header {
     align-items: flex-start;
     background: rgba(178, 180, 180, 0);
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0);
-
-    .header_theme{
-        padding-left: 95px;
-        a{
-            img{
-                width: 40px;
-            }
-        }
-    }
 }
 .index_header_menu {
-    padding-top: 130px;
-    padding-left: 30px;
+    margin-top: 150px;
 }
 .index_header_menu_nav ul li{
     padding-bottom: 10px;
     font-family: 'Megrim';
     font-size: 50px;
     list-style: none;
+    padding-left: 50px;
 
     a{
         color: rgb(197, 197, 197);

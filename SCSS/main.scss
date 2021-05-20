@@ -9,7 +9,7 @@
     margin: 0 auto;
     padding-top: 50px;
 }
-.main__gallery___container{
+.main__gallery__container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(200px,auto);
@@ -55,7 +55,7 @@
 /*
                                         PAGE - MAIN SERVICES DESK
 */
-#main__ontenedorServices {
+#main__contenedorServices {
     display: block;
     padding-top: 50px;
     padding-bottom: 100px;
