@@ -1,9 +1,19 @@
+/*VARIABLES*/
+$heightini:100px;
+$i:1;
+/*MAPS*/
+$redes:(
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #ee168d
+);
 .index_main{
-    height: 290px;
+    height: ($heightini*2)+90;
+    /*height: 290px;*/
 }
-/*
-                                        PAGE - MAIN GALLERY DESK
-*/
+
+
+/*GALLERY DESK*/
 #main__contenedor__gallery {
     width: 90%;
     margin: 0 auto;
@@ -52,9 +62,7 @@
     filter: opacity(1);
 }
 
-/*
-                                        PAGE - MAIN SERVICES DESK
-*/
+/*SERVICES DESK*/
 #main__contenedorServices {
     display: block;
     padding-top: 50px;
@@ -65,9 +73,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /*Services 1 =====================*/
+
+    @for $i from 1 through 3{
+        .main__services_#{$i} {display: flex;}
+    }
+    /*Services 1 */
     .main__services_1{
-        display: flex;
+        /*display: flex;*/
         text-align: left;
         .main__service1_text{
             display: inline-block;
@@ -90,7 +102,8 @@
         }
         .carousel-item{
             width: 100%;
-            height: 500px;
+            height: $heightini*5;
+            /*height: 500px;*/
 
             img{
                 width: 100%;
@@ -99,9 +112,9 @@
             }
         }
     }
-    /*Services 2 =====================*/
+    /*Services 2 */
     .main__services_2{
-        display: flex;
+        /*display: flex;*/
         text-align: left;
         .main__service2_text{
             display: inline-block;
@@ -124,7 +137,8 @@
         }
         .carousel-item{
             width: 100%;
-            height: 500px;
+            height: $heightini*5;
+            /*height: 500px;*/
 
             img{
                 width: 100%;
@@ -134,9 +148,9 @@
         }
 
     }
-    /*Services 3 =====================*/
+    /*Services 3 */
     .main__services_3{
-        display: flex;
+        /*display: flex;*/
         text-align: left;
         .main__service3_text{
             display: inline-block;
@@ -159,7 +173,8 @@
         }
         .carousel-item{
             width: 100%;
-            height: 500px;
+            height: $heightini*5;
+            /*height: 500px;*/
 
             img{
                 width: 100%;
@@ -170,9 +185,7 @@
     }
 }
 
-/*
-                                        PAGE - MAIN ABOUT
-*/
+/*ABOUT DESK*/
 #contenedor_about h1 {
     font-size: 30px;
     font-weight: 600;
@@ -203,9 +216,7 @@
     padding-top: 150px;
 }
 
-/*
-                                        PAGE - MAIN CONTACT
- */
+/*CONTACT DESK*/
 #contenedor {
     width: 90%;
     max-width: 1000px;
@@ -269,6 +280,291 @@
             display: flex;
             width: 40px;
             height: 40px;
+            /*background: rgba(206, 158, 0, 0.637);
+            color: rgb(187, 187, 187);*/
+            text-decoration: none;
+            margin: 5px;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 50%;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);     
+        }
+        @each $red, $color in $redes {
+            .a-#{$red}{
+                background: $color;
+                color: white;
+                &:hover{
+                    background: white;
+                    color: $color;
+                }
+            }
+        }
+
+    }
+}
+
+/*Estilos Formulario */
+.formulario {
+    padding-left: 10px;
+
+    textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 150px;
+        max-height: 200px;
+    }
+
+    button{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: 'Thasadith';
+        color: rgb(255, 254, 254);
+        padding: 5px 20px 5px 20px;
+        background: rgba(206, 158, 0, 0.637);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 35px;
+    }
+}
+
+
+
+.formulario input[type='text'],
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-weight: 400;
+    outline: 0;
+}
+
+/*                                               CSS - MAIN TABLET                                      */
+@media only screen and (min-width:700px){
+
+}
+
+/*                                               CSS - MAIN MOBILE                                      */
+@media only screen and (max-width:699px){
+
+/*SERVICES MOBILE*/
+#main__contenedorServices {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.main__contenidoServices {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    @for $i from 1 through 3{
+        .main__services_#{$i} {display: block;}
+    }
+    /*Services 1 */
+    .main__services_1{
+        /*display: flex;*/
+        text-align: center;
+        padding-bottom: 50px;
+        .main__service1_text{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px;  
+                color: rgb(175, 135, 2);
+            }
+        }
+        .carousel{
+            width: 100%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: $heightini*5;
+            /*height: 500px;*/
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    /*Services 2 */
+    .main__services_2{
+        /*display: flex;*/
+        text-align: center;
+        padding-bottom: 50px;
+        .main__service2_text{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px; 
+                color: rgb(175, 135, 2); 
+            }
+        }
+        .carousel{
+            width: 100%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: $heightini*5;
+            /*height: 500px;*/
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+    /*Services 3 */
+    .main__services_3{
+        /*display: flex;*/
+        text-align: center;
+        .main__service3_text{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            h3{
+                color: rgb(245, 202, 63);
+                font-size: 30px;
+                font-family: 'Zilla Slab Highlight';
+            }
+            p{
+                line-height: 30px;
+                letter-spacing: 1.5px;  
+                color: rgb(175, 135, 2);
+            }
+        }
+        .carousel{
+            width: 100%;
+        }
+        .carousel-item{
+            width: 100%;
+            height: $heightini*5;
+            /*height: 500px;*/
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+/*ABOUT MOBILE*/
+#contenedor_about h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    padding-bottom: 25px;
+    font-size: 45px;
+    font-family: 'Zilla Slab Highlight';
+    color: rgb(245, 202, 63);
+}
+.contenido_about {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.text_descripcion{ 
+    
+    p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(175, 135, 2); 
+    font-family: 'Thasadith';
+    font-size: 20px;
+    }
+}
+
+.video_presentacion {
+    padding-top: 100px;
+
+    video{
+        width: 100%;
+    }  
+}
+
+
+
+/*CONTACT MOBILE*/
+ #contenedor {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.contenido {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido .info,
+.contenido .formulario {
+    width: 100%;
+}
+
+/* Estilos Info */
+.info {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    .col {
+        width: 100%;
+        font-size: 16px;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-bottom: 20px;
+
+        .icono {
+            color: rgb(175, 135, 2);
+            margin-right: 10px;
+        }
+
+        p {
+            color: rgb(199, 199, 199);
+            padding-left: 20px;
+        }
+    }
+
+    .redes-sociales {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+
+
+        a {
+            display: flex;
+            width: 40px;
+            height: 40px;
             background: rgba(206, 158, 0, 0.637);
             color: rgb(187, 187, 187);
             margin: 5px;
@@ -278,19 +574,36 @@
             border-radius: 50%;
             box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);
         }
+        
+        @each $red, $color in $redes {
+            .a-#{$red}{
+                background: $color;
+                color: white;
+                &:hover{
+                    background: white;
+                    color: $color;
+                }
+            }
+        }
     }
 }
 
 /*Estilos Formulario */
 
 .formulario {
-    padding-left: 10px;
+    text-align: center;
 
-    textarea {
-        max-width: 100%;
-        min-width: 100%;
-        min-height: 150px;
-        max-height: 200px;
+    button{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: 'Thasadith';
+        color: rgb(255, 254, 254);
+        padding: 5px 20px 5px 20px;
+        background: rgba(206, 158, 0, 0.637);
+        border-width: 3px;
+        border-style: solid;
+        border-radius: 35px;
     }
 }
 .formulario input[type='text'],
@@ -304,16 +617,5 @@
     outline: 0;
 }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - MAIN TABLET
------------------------------------------------------------------------------------------------------ */
-@media only screen and (min-width:700px){
-
 }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - MAIN MOBILE
------------------------------------------------------------------------------------------------------ */
-@media only screen and (mmax-width:699px){
-
-}

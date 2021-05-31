@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milton Martin Collard - Proyecto</title>
+    <meta name="description" content="Pagina de contacto de MC Photography">
+    <meta name="keywords" content="CONTACTO, INFORMACION, FORMULARIO">
+    <title>Contacto - MC Photography</title>
     <script src="https://kit.fontawesome.com/38e612e0ec.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,6 +21,18 @@
             <img src="/Proyecto Final/WEBSITE/Multimedia/Imagenes/logo2_sinfondo.png" alt="">
         </div>
         <div class="header__menu">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="index.html">Home</a></li>
+                  <a class="dropdown-item" href="pages/gallery.html">GALLERY</a>
+                  <a class="dropdown-item" href="pages/service.html">Services</a>
+                  <a class="dropdown-item" href="pages/about.html">About</a>
+                  <a class="dropdown-item" href="pages/contact.html">Contact</a>
+                </div>
+            </div>
             <!--Barra de menu-->
             <nav class="header__menu__nav">
                 <ul>
@@ -52,9 +66,9 @@
                     </div>
 
                     <div class="redes-sociales">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="a-facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="a-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="a-instagram"><i class="fab fa-instagram"></i></a>
                     </div>
 
                 </div>
@@ -64,7 +78,7 @@
                     <input type="text" name="correo" placeholder="Correo Electronico" id="correo">
                     <input type="text" name="comentarios" placeholder="Comentarios" id="comentarios">
                     <textarea name="mensaje" id="mensaje" placeholder="¿En que podemos ayudarte?"></textarea>
-                    <button type="button">Enviar</button>
+                    <button type="button">SEND</button>
 
                 </form>
             </div>

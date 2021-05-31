@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Megrim&family=Alfa+Slab+One&family=Miniver&family=Swanky+and+Moo+Moo&family=Zilla+Slab+Highlight&display=swap");
-/*COMIENZO SASS*/
-/* -----------------------------------------------------------------------------------------------------
+/*
                                               CSS - HEADER DESK
------------------------------------------------------------------------------------------------------ */
+ */
 /* ESTILOS GENERALES DESK */
 header {
   display: flex;
@@ -22,20 +21,23 @@ header {
   display: inline-block;
   padding-left: 10%;
   padding-right: 10%; }
+  .header__menu .dropdown {
+    display: none; }
 
 .header__menu__nav ul li {
   display: inline-block;
   padding: 0 30px;
   color: white;
   font-family: 'Zilla Slab Highlight';
-  font-size: 20px;
+  font-size: 25px;
   list-style-type: none; }
-  .header__menu__nav ul li a :hover {
+  .header__menu__nav ul li a:hover {
+    color: white;
     text-decoration: none; }
 
-/* ==================================================================================
+/* 
                                      PAGE - HEADER INDEX DESK
-===================================================================================*/
+*/
 /* ESTILOS HEADER INDEX PAGE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 .index_header {
   display: flex;
@@ -63,21 +65,49 @@ header {
 /* -----------------------------------------------------------------------------------------------------
                                               CSS - HEADER TABLET
 ----------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .header__menu__nav ul li {
+    display: inline-block;
+    padding: 0 5px;
+    color: white;
+    font-family: 'Zilla Slab Highlight';
+    font-size: 19px;
+    list-style-type: none; }
+    .header__menu__nav ul li a:hover {
+      color: white;
+      text-decoration: none; } }
+
 /* -----------------------------------------------------------------------------------------------------
                                               CSS - HEADER MOBILE
 ----------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 699px) {
+  .header__menu .dropdown {
+    display: block; }
+    .header__menu .dropdown .dropdown-menu {
+      padding-top: 25px;
+      background-color: rgba(109, 109, 109, 0.9);
+      transform: translate3d(-75px, 77px, 0px); }
+      .header__menu .dropdown .dropdown-menu a {
+        color: white;
+        font-family: 'Zilla Slab Highlight';
+        font-size: 20px; }
+        .header__menu .dropdown .dropdown-menu a:hover {
+          background-color: rgba(109, 109, 109, 0.9);
+          font-size: 30px; }
+  .header__menu .header__menu__nav {
+    display: none; }
   .index_header_menu {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
     padding: 0; }
-  .index_header_menu_nav a {
-    font-family: 'Megrim';
-    font-size: 50px;
-    list-style: none;
-    color: #c5c5c5; }
-    .index_header_menu_nav a :hover {
+  .index_header_menu_nav {
+    width: 100%;
+    text-align: center; }
+    .index_header_menu_nav a {
+      font-family: 'Megrim';
+      font-size: 50px;
+      list-style: none;
+      color: #c5c5c5; }
+    .index_header_menu_nav :hover {
       color: white;
       font-family: 'Zilla Slab Highlight';
       font-size: 50px; } }
@@ -115,8 +145,11 @@ body {
 /* -----------------------------------------------------------------------------------------------------
                                               CSS - BODY MOBILE
 ----------------------------------------------------------------------------------------------------- */
+/*VARIABLES*/
+/*MAPS*/
 .index_main {
-  height: 290px; }
+  height: 290px;
+  /*height: 290px;*/ }
 
 /*
                                         PAGE - MAIN GALLERY DESK
@@ -184,7 +217,13 @@ body {
   /*Services 2 =====================*/
   /*Services 3 =====================*/ }
   .main__contenidoServices .main__services_1 {
-    display: flex;
+    display: flex; }
+  .main__contenidoServices .main__services_2 {
+    display: flex; }
+  .main__contenidoServices .main__services_3 {
+    display: flex; }
+  .main__contenidoServices .main__services_1 {
+    /*display: flex;*/
     text-align: left; }
     .main__contenidoServices .main__services_1 .main__service1_text {
       display: inline-block;
@@ -203,13 +242,14 @@ body {
       width: 70%; }
     .main__contenidoServices .main__services_1 .carousel-item {
       width: 100%;
-      height: 500px; }
+      height: 500px;
+      /*height: 500px;*/ }
       .main__contenidoServices .main__services_1 .carousel-item img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
   .main__contenidoServices .main__services_2 {
-    display: flex;
+    /*display: flex;*/
     text-align: left; }
     .main__contenidoServices .main__services_2 .main__service2_text {
       display: inline-block;
@@ -228,13 +268,14 @@ body {
       width: 70%; }
     .main__contenidoServices .main__services_2 .carousel-item {
       width: 100%;
-      height: 500px; }
+      height: 500px;
+      /*height: 500px;*/ }
       .main__contenidoServices .main__services_2 .carousel-item img {
         width: 100%;
         height: 100%;
         object-fit: cover; }
   .main__contenidoServices .main__services_3 {
-    display: flex;
+    /*display: flex;*/
     text-align: left; }
     .main__contenidoServices .main__services_3 .main__service3_text {
       display: inline-block;
@@ -253,7 +294,8 @@ body {
       width: 70%; }
     .main__contenidoServices .main__services_3 .carousel-item {
       width: 100%;
-      height: 500px; }
+      height: 500px;
+      /*height: 500px;*/ }
       .main__contenidoServices .main__services_3 .carousel-item img {
         width: 100%;
         height: 100%;
@@ -341,14 +383,33 @@ body {
       display: flex;
       width: 40px;
       height: 40px;
-      background: rgba(206, 158, 0, 0.637);
-      color: #bbbbbb;
+      /*background: rgba(206, 158, 0, 0.637);
+            color: rgb(187, 187, 187);*/
+      text-decoration: none;
       margin: 5px;
       justify-content: center;
       align-items: center;
       font-size: 18px;
       border-radius: 50%;
       box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4); }
+    .info .redes-sociales .a-twitter {
+      background: #55acee;
+      color: white; }
+      .info .redes-sociales .a-twitter:hover {
+        background: white;
+        color: #55acee; }
+    .info .redes-sociales .a-facebook {
+      background: #3a5795;
+      color: white; }
+      .info .redes-sociales .a-facebook:hover {
+        background: white;
+        color: #3a5795; }
+    .info .redes-sociales .a-instagram {
+      background: #ee168d;
+      color: white; }
+      .info .redes-sociales .a-instagram:hover {
+        background: white;
+        color: #ee168d; }
 
 /*Estilos Formulario */
 .formulario {
@@ -358,6 +419,17 @@ body {
     min-width: 100%;
     min-height: 150px;
     max-height: 200px; }
+  .formulario button {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Thasadith';
+    color: #fffefe;
+    padding: 5px 20px 5px 20px;
+    background: rgba(206, 158, 0, 0.637);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 35px; }
 
 .formulario input[type='text'],
 .formulario textarea {
@@ -375,6 +447,223 @@ body {
 /* -----------------------------------------------------------------------------------------------------
                                               CSS - MAIN MOBILE
 ----------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 699px) {
+  /*                                              SERVICES PAGE
+*/
+  #main__contenedorServices {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .main__contenidoServices {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*Services 1 =====================*/
+    /*Services 2 =====================*/
+    /*Services 3 =====================*/ }
+    .main__contenidoServices .main__services_1 {
+      display: block; }
+    .main__contenidoServices .main__services_2 {
+      display: block; }
+    .main__contenidoServices .main__services_3 {
+      display: block; }
+    .main__contenidoServices .main__services_1 {
+      /*display: flex;*/
+      text-align: center;
+      padding-bottom: 50px; }
+      .main__contenidoServices .main__services_1 .main__service1_text {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: auto; }
+        .main__contenidoServices .main__services_1 .main__service1_text h3 {
+          color: #f5ca3f;
+          font-size: 30px;
+          font-family: 'Zilla Slab Highlight'; }
+        .main__contenidoServices .main__services_1 .main__service1_text p {
+          line-height: 30px;
+          letter-spacing: 1.5px;
+          color: #af8702; }
+      .main__contenidoServices .main__services_1 .carousel {
+        width: 100%; }
+      .main__contenidoServices .main__services_1 .carousel-item {
+        width: 100%;
+        height: 500px;
+        /*height: 500px;*/ }
+        .main__contenidoServices .main__services_1 .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .main__contenidoServices .main__services_2 {
+      /*display: flex;*/
+      text-align: center;
+      padding-bottom: 50px; }
+      .main__contenidoServices .main__services_2 .main__service2_text {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: auto; }
+        .main__contenidoServices .main__services_2 .main__service2_text h3 {
+          color: #f5ca3f;
+          font-size: 30px;
+          font-family: 'Zilla Slab Highlight'; }
+        .main__contenidoServices .main__services_2 .main__service2_text p {
+          line-height: 30px;
+          letter-spacing: 1.5px;
+          color: #af8702; }
+      .main__contenidoServices .main__services_2 .carousel {
+        width: 100%; }
+      .main__contenidoServices .main__services_2 .carousel-item {
+        width: 100%;
+        height: 500px;
+        /*height: 500px;*/ }
+        .main__contenidoServices .main__services_2 .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .main__contenidoServices .main__services_3 {
+      /*display: flex;*/
+      text-align: center; }
+      .main__contenidoServices .main__services_3 .main__service3_text {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: auto; }
+        .main__contenidoServices .main__services_3 .main__service3_text h3 {
+          color: #f5ca3f;
+          font-size: 30px;
+          font-family: 'Zilla Slab Highlight'; }
+        .main__contenidoServices .main__services_3 .main__service3_text p {
+          line-height: 30px;
+          letter-spacing: 1.5px;
+          color: #af8702; }
+      .main__contenidoServices .main__services_3 .carousel {
+        width: 100%; }
+      .main__contenidoServices .main__services_3 .carousel-item {
+        width: 100%;
+        height: 500px;
+        /*height: 500px;*/ }
+        .main__contenidoServices .main__services_3 .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  /*
+                                                 ABOUT PAGE
+*/
+  #contenedor_about h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    padding-bottom: 25px;
+    font-size: 45px;
+    font-family: 'Zilla Slab Highlight';
+    color: #f5ca3f; }
+  .contenido_about {
+    text-align: center;
+    padding-bottom: 100px; }
+  .text_descripcion p {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #af8702;
+    font-family: 'Thasadith';
+    font-size: 20px; }
+  .video_presentacion {
+    padding-top: 100px; }
+    .video_presentacion video {
+      width: 100%; }
+  /*
+                                             CONTACT PAGE
+ */
+  #contenedor {
+    width: 100%;
+    margin-top: 50px; }
+  .contenido {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+  .contenido .info,
+  .contenido .formulario {
+    width: 100%; }
+  /* Estilos Info */
+  .info {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; }
+    .info .col {
+      width: 100%;
+      font-size: 16px;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding-bottom: 20px; }
+      .info .col .icono {
+        color: #af8702;
+        margin-right: 10px; }
+      .info .col p {
+        color: #c7c7c7;
+        padding-left: 20px; }
+    .info .redes-sociales {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 20px; }
+      .info .redes-sociales a {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background: rgba(206, 158, 0, 0.637);
+        color: #bbbbbb;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        border-radius: 50%;
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4); }
+      .info .redes-sociales .a-twitter {
+        background: #55acee;
+        color: white; }
+        .info .redes-sociales .a-twitter:hover {
+          background: white;
+          color: #55acee; }
+      .info .redes-sociales .a-facebook {
+        background: #3a5795;
+        color: white; }
+        .info .redes-sociales .a-facebook:hover {
+          background: white;
+          color: #3a5795; }
+      .info .redes-sociales .a-instagram {
+        background: #ee168d;
+        color: white; }
+        .info .redes-sociales .a-instagram:hover {
+          background: white;
+          color: #ee168d; }
+  /*Estilos Formulario */
+  .formulario {
+    text-align: center; }
+    .formulario button {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      font-family: 'Thasadith';
+      color: #fffefe;
+      padding: 5px 20px 5px 20px;
+      background: rgba(206, 158, 0, 0.637);
+      border-width: 3px;
+      border-style: solid;
+      border-radius: 35px; }
+  .formulario input[type='text'],
+  .formulario textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-weight: 400;
+    outline: 0; } }
+
 /* -----------------------------------------------------------------------------------------------------
                                               CSS - FOOTER DESK
 ----------------------------------------------------------------------------------------------------- */

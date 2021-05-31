@@ -1,18 +1,16 @@
-/*COMIENZO SASS*/
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - HEADER DESK
------------------------------------------------------------------------------------------------------ */
-/* ESTILOS GENERALES DESK */
+$color-primary: rgba(178, 180, 180, 0.2) ;
+/*HEADER DESK*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(178, 180, 180, 0.2);
+    background: $color-primary;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);
     a{
         color:white;
     }
 }
+
 .header__logo {
     display: inline-block;
 
@@ -24,26 +22,28 @@ header {
     display: inline-block;
     padding-left: 10%;
     padding-right: 10%;
+
+    .dropdown{
+        display: none;
+    }
 }
 .header__menu__nav ul li {
     display: inline-block;
     padding: 0 30px;
     color: white;
     font-family: 'Zilla Slab Highlight';
-    font-size: 20px;
+    font-size: 25px;
     list-style-type: none;
 
     a{
-        :hover{
+        &:hover{
+            color: white;
             text-decoration: none;
         }
     }
 }
 
-/* ==================================================================================
-                                     PAGE - HEADER INDEX DESK
-===================================================================================*/ 
-/* ESTILOS HEADER INDEX PAGE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/*HEADER INDEX DESK*/ 
 .index_header {
     display: flex;
     flex-direction: column;
@@ -72,28 +72,73 @@ header {
     }
 }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - HEADER TABLET
------------------------------------------------------------------------------------------------------ */
-@media only screen and (min-width:700px){
+/*HEADER TABLET*/
+@media only screen and (min-width:700px) and (max-width:1000px){
+
+    .header__menu__nav ul li {
+        display: inline-block;
+        padding: 0 5px;
+        color: white;
+        font-family: 'Zilla Slab Highlight';
+        font-size: 19px;
+        list-style-type: none;
+    
+        a{
+            &:hover{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
 
 }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - HEADER MOBILE
------------------------------------------------------------------------------------------------------ */
+/*HEADER MOBILE*/
 @media only screen and (max-width:699px){
+
+.header__menu{
+    .dropdown{
+        display: block;
+
+        .dropdown-menu{
+            padding-top: 25px;
+            background-color: rgba(109, 109, 109, 0.9);
+            transform: translate3d(-75px, 77px, 0px);
+
+            a{
+                color: white;
+                font-family: 'Zilla Slab Highlight';
+                font-size: 20px;
+
+                &:hover{
+                    background-color: rgba(109, 109, 109, 0.9);
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+
+
+    .header__menu__nav{
+        display: none;
+    }
+}
+
+
 .index_header_menu {
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 60px;
     padding: 0;
 }
-.index_header_menu_nav a {
+.index_header_menu_nav{
+    width: 100%;
+    text-align: center;
+    a {
     font-family: 'Megrim';
     font-size: 50px;
     list-style: none;
     color: rgb(197, 197, 197);
+    }
 
     :hover{
         color: white;
