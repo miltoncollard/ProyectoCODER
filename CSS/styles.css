@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Alfa+Slab+One&family=Miniver&family=Swanky+and+Moo+Moo&family=Zilla+Slab+Highlight&display=swap");
-/*
-                                              CSS - HEADER DESK
- */
-/* ESTILOS GENERALES DESK */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Zilla+Slab+Highlight&display=swap");
+/*HEADER DESK*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(178, 180, 180, 0.2);
-  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4); }
+  background: #1f1f1f;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
   header a {
     color: white; }
 
@@ -28,17 +29,14 @@ header {
   display: inline-block;
   padding: 0 30px;
   color: white;
-  font-family: 'Zilla Slab Highlight';
+  font-family: 'Poiret One';
   font-size: 25px;
   list-style-type: none; }
   .header__menu__nav ul li a:hover {
     color: white;
     text-decoration: none; }
 
-/* 
-                                     PAGE - HEADER INDEX DESK
-*/
-/* ESTILOS HEADER INDEX PAGE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/*HEADER INDEX DESK*/
 .index_header {
   display: flex;
   flex-direction: column;
@@ -51,35 +49,31 @@ header {
 
 .index_header_menu_nav ul li {
   padding-bottom: 10px;
-  font-family: 'Megrim';
+  font-family: 'Poiret One';
   font-size: 50px;
   list-style: none;
   padding-left: 50px; }
   .index_header_menu_nav ul li a {
-    color: #c5c5c5; }
+    color: #fdfdfd; }
   .index_header_menu_nav ul li :hover {
     color: white;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Zilla Slab Highlight', cursive;
     font-size: 60px; }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - HEADER TABLET
------------------------------------------------------------------------------------------------------ */
+/*HEADER TABLET*/
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
   .header__menu__nav ul li {
     display: inline-block;
     padding: 0 5px;
     color: white;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Poiret One';
     font-size: 19px;
     list-style-type: none; }
     .header__menu__nav ul li a:hover {
       color: white;
       text-decoration: none; } }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - HEADER MOBILE
------------------------------------------------------------------------------------------------------ */
+/*HEADER MOBILE*/
 @media only screen and (max-width: 699px) {
   .header__menu .dropdown {
     display: block; }
@@ -89,7 +83,7 @@ header {
       transform: translate3d(-75px, 77px, 0px); }
       .header__menu .dropdown .dropdown-menu a {
         color: white;
-        font-family: 'Zilla Slab Highlight';
+        font-family: 'Poiret One';
         font-size: 20px; }
         .header__menu .dropdown .dropdown-menu a:hover {
           background-color: rgba(109, 109, 109, 0.9);
@@ -112,15 +106,13 @@ header {
       font-family: 'Zilla Slab Highlight';
       font-size: 50px; } }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - BODY DESK
------------------------------------------------------------------------------------------------------ */
+/*BODY DESK*/
 body {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-color: #383838;
+  background-color: #ffffff;
   background-size: cover; }
 
 .index_body {
@@ -139,21 +131,15 @@ body {
   background-image: url(../Multimedia/Imagenes/varios/IMG_20210308_101807467.jpg);
   background-size: cover; }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - BODY TABLET
------------------------------------------------------------------------------------------------------ */
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - BODY MOBILE
------------------------------------------------------------------------------------------------------ */
+/*BODY TABLET*/
+/*BODY MOBILE*/
 /*VARIABLES*/
 /*MAPS*/
 .index_main {
   height: 290px;
   /*height: 290px;*/ }
 
-/*
-                                        PAGE - MAIN GALLERY DESK
-*/
+/*GALLERY DESK*/
 #main__contenedor__gallery {
   width: 90%;
   margin: 0 auto;
@@ -200,9 +186,7 @@ body {
 .gallery__img:hover {
   filter: opacity(1); }
 
-/*
-                                        PAGE - MAIN SERVICES DESK
-*/
+/*SERVICES DESK*/
 #main__contenedorServices {
   display: block;
   padding-top: 50px;
@@ -213,9 +197,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  /*Services 1 =====================*/
-  /*Services 2 =====================*/
-  /*Services 3 =====================*/ }
+  /*Services 1 */
+  /*Services 2 */
+  /*Services 3 */ }
   .main__contenidoServices .main__services_1 {
     display: flex; }
   .main__contenidoServices .main__services_2 {
@@ -224,20 +208,23 @@ body {
     display: flex; }
   .main__contenidoServices .main__services_1 {
     /*display: flex;*/
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 50px; }
     .main__contenidoServices .main__services_1 .main__service1_text {
       display: inline-block;
       width: 30%;
       text-align: center;
-      margin: auto; }
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px; }
       .main__contenidoServices .main__services_1 .main__service1_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Zilla Slab Highlight'; }
+        font-family: 'Poiret One'; }
       .main__contenidoServices .main__services_1 .main__service1_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: #af8702; }
+        color: black; }
     .main__contenidoServices .main__services_1 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_1 .carousel-item {
@@ -250,20 +237,23 @@ body {
         object-fit: cover; }
   .main__contenidoServices .main__services_2 {
     /*display: flex;*/
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 50px; }
     .main__contenidoServices .main__services_2 .main__service2_text {
       display: inline-block;
       width: 30%;
       text-align: center;
-      margin: auto; }
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px; }
       .main__contenidoServices .main__services_2 .main__service2_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Zilla Slab Highlight'; }
+        font-family: 'Poiret One'; }
       .main__contenidoServices .main__services_2 .main__service2_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: #af8702; }
+        color: black; }
     .main__contenidoServices .main__services_2 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_2 .carousel-item {
@@ -276,20 +266,23 @@ body {
         object-fit: cover; }
   .main__contenidoServices .main__services_3 {
     /*display: flex;*/
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 50px; }
     .main__contenidoServices .main__services_3 .main__service3_text {
       display: inline-block;
       width: 30%;
       text-align: center;
-      margin: auto; }
+      margin: auto;
+      padding-left: 10px;
+      padding-right: 10px; }
       .main__contenidoServices .main__services_3 .main__service3_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Zilla Slab Highlight'; }
+        font-family: 'Poiret One'; }
       .main__contenidoServices .main__services_3 .main__service3_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: #af8702; }
+        color: black; }
     .main__contenidoServices .main__services_3 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_3 .carousel-item {
@@ -301,9 +294,7 @@ body {
         height: 100%;
         object-fit: cover; }
 
-/*
-                                        PAGE - MAIN ABOUT
-*/
+/*ABOUT DESK*/
 #contenedor_about h1 {
   font-size: 30px;
   font-weight: 600;
@@ -311,7 +302,7 @@ body {
   padding: 100px 0 50px 0;
   padding-bottom: 25px;
   font-size: 50px;
-  font-family: 'Zilla Slab Highlight';
+  font-family: 'Poiret One';
   color: #f5ca3f; }
 
 .contenido_about {
@@ -322,20 +313,18 @@ body {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  color: #af8702;
-  font-family: 'Thasadith';
+  color: black;
+  font-family: 'Poiret One';
   font-size: 20px; }
 
 .video_presentacion {
   padding-top: 150px; }
 
-/*
-                                        PAGE - MAIN CONTACT
- */
+/*CONTACT DESK*/
 #contenedor {
   width: 90%;
   max-width: 1000px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(172, 172, 172, 0.2);
   padding: 40px;
   margin: 100px auto;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
@@ -344,7 +333,7 @@ body {
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
-    color: #cc9e06; }
+    color: black; }
 
 .contenido {
   display: flex;
@@ -369,10 +358,10 @@ body {
     flex-wrap: nowrap;
     padding-bottom: 40px; }
     .info .col .icono {
-      color: #af8702;
+      color: #f5be0a;
       margin-right: 10px; }
     .info .col p {
-      color: #c7c7c7; }
+      color: black; }
   .info .redes-sociales {
     width: 100%;
     overflow: hidden;
@@ -423,10 +412,10 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    font-family: 'Thasadith';
-    color: #fffefe;
+    font-family: 'Poiret One';
+    color: black;
     padding: 5px 20px 5px 20px;
-    background: rgba(206, 158, 0, 0.637);
+    background: rgba(243, 187, 4, 0.829);
     border-width: 3px;
     border-style: solid;
     border-radius: 35px; }
@@ -441,15 +430,10 @@ body {
   font-weight: 400;
   outline: 0; }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - MAIN TABLET
------------------------------------------------------------------------------------------------------ */
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - MAIN MOBILE
------------------------------------------------------------------------------------------------------ */
+/*CSS - MAIN TABLET*/
+/*CSS - MAIN MOBILE*/
 @media only screen and (max-width: 699px) {
-  /*                                              SERVICES PAGE
-*/
+  /*SERVICES MOBILE*/
   #main__contenedorServices {
     display: block;
     padding-top: 50px;
@@ -459,9 +443,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    /*Services 1 =====================*/
-    /*Services 2 =====================*/
-    /*Services 3 =====================*/ }
+    /*Services 1 */
+    /*Services 2 */
+    /*Services 3 */ }
     .main__contenidoServices .main__services_1 {
       display: block; }
     .main__contenidoServices .main__services_2 {
@@ -480,7 +464,7 @@ body {
         .main__contenidoServices .main__services_1 .main__service1_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Zilla Slab Highlight'; }
+          font-family: 'Poiret One'; }
         .main__contenidoServices .main__services_1 .main__service1_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -507,7 +491,7 @@ body {
         .main__contenidoServices .main__services_2 .main__service2_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Zilla Slab Highlight'; }
+          font-family: 'Poiret One'; }
         .main__contenidoServices .main__services_2 .main__service2_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -533,7 +517,7 @@ body {
         .main__contenidoServices .main__services_3 .main__service3_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Zilla Slab Highlight'; }
+          font-family: 'Poiret One'; }
         .main__contenidoServices .main__services_3 .main__service3_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -548,9 +532,7 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover; }
-  /*
-                                                 ABOUT PAGE
-*/
+  /*ABOUT MOBILE*/
   #contenedor_about h1 {
     font-size: 30px;
     font-weight: 600;
@@ -558,7 +540,7 @@ body {
     padding: 50px 0 50px 0;
     padding-bottom: 25px;
     font-size: 45px;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Poiret One';
     color: #f5ca3f; }
   .contenido_about {
     text-align: center;
@@ -568,15 +550,13 @@ body {
     margin: 0 auto;
     text-align: center;
     color: #af8702;
-    font-family: 'Thasadith';
+    font-family: 'Poiret One';
     font-size: 20px; }
   .video_presentacion {
     padding-top: 100px; }
     .video_presentacion video {
       width: 100%; }
-  /*
-                                             CONTACT PAGE
- */
+  /*CONTACT MOBILE*/
   #contenedor {
     width: 100%;
     margin-top: 50px; }
@@ -647,7 +627,7 @@ body {
       text-decoration: none;
       font-weight: 600;
       font-size: 15px;
-      font-family: 'Thasadith';
+      font-family: 'Poiret One';
       color: #fffefe;
       padding: 5px 20px 5px 20px;
       background: rgba(206, 158, 0, 0.637);
@@ -664,15 +644,13 @@ body {
     font-weight: 400;
     outline: 0; } }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - FOOTER DESK
------------------------------------------------------------------------------------------------------ */
+/*FOOTER DESK*/
 footer {
   position: relative;
   bottom: 0; }
   footer .footer_text {
-    color: #af8702;
-    font-family: 'Zilla Slab Highlight';
+    color: black;
+    font-family: 'Poiret One';
     text-align: center; }
 
 .index_footer {
@@ -683,15 +661,11 @@ footer {
   background: rgba(178, 180, 180, 0.2); }
   .index_footer p {
     color: white;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Poiret One';
     text-align: center; }
 
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - FOOTER TABLET
------------------------------------------------------------------------------------------------------ */
-/* -----------------------------------------------------------------------------------------------------
-                                              CSS - FOOTER MOBILE
------------------------------------------------------------------------------------------------------ */
+/*FOOTER TABLET*/
+/*CSS - FOOTER MOBILE*/
 * {
   /*box-sizing: border-box;
     outline: solid 1px gray;*/

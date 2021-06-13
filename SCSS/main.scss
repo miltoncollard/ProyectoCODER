@@ -81,20 +81,23 @@ $redes:(
     .main__services_1{
         /*display: flex;*/
         text-align: left;
+        padding-bottom: 50px;
         .main__service1_text{
             display: inline-block;
             width: 30%;
             text-align: center;
             margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px;  
-                color: rgb(175, 135, 2);
+                color: rgb(0, 0, 0);
             }
         }
         .carousel{
@@ -116,20 +119,23 @@ $redes:(
     .main__services_2{
         /*display: flex;*/
         text-align: left;
+        padding-bottom: 50px;
         .main__service2_text{
             display: inline-block;
             width: 30%;
             text-align: center;
             margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px; 
-                color: rgb(175, 135, 2); 
+                color: rgb(0, 0, 0); 
             }
         }
         .carousel{
@@ -152,20 +158,23 @@ $redes:(
     .main__services_3{
         /*display: flex;*/
         text-align: left;
+        padding-bottom: 50px;
         .main__service3_text{
             display: inline-block;
             width: 30%;
             text-align: center;
             margin: auto;
+            padding-left: 10px;
+            padding-right: 10px;
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px;  
-                color: rgb(175, 135, 2);
+                color: rgb(0, 0, 0);
             }
         }
         .carousel{
@@ -193,7 +202,7 @@ $redes:(
     padding: 100px 0 50px 0;
     padding-bottom: 25px;
     font-size: 50px;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Poiret One';
     color: rgb(245, 202, 63);
 }
 .contenido_about {
@@ -206,8 +215,8 @@ $redes:(
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    color: rgb(175, 135, 2); 
-    font-family: 'Thasadith';
+    color: rgb(0, 0, 0); 
+    font-family: 'Poiret One';
     font-size: 20px;
     }
 }
@@ -220,7 +229,7 @@ $redes:(
 #contenedor {
     width: 90%;
     max-width: 1000px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(172, 172, 172, 0.2);
     padding: 40px;
     margin: 100px auto;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
@@ -230,7 +239,7 @@ $redes:(
         font-weight: 600;
         text-align: center;
         margin-bottom: 25px;
-        color: rgb(204, 158, 6);
+        color: rgb(0, 0, 0);
     }
 }
 
@@ -260,12 +269,12 @@ $redes:(
         padding-bottom: 40px;
 
         .icono {
-            color: rgb(175, 135, 2);
+            color: rgb(245, 190, 10);
             margin-right: 10px;
         }
 
         p {
-            color: rgb(199, 199, 199);
+            color: rgb(0, 0, 0);
         }
     }
 
@@ -319,10 +328,10 @@ $redes:(
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
-        font-family: 'Thasadith';
-        color: rgb(255, 254, 254);
+        font-family: 'Poiret One';
+        color: rgb(0, 0, 0);
         padding: 5px 20px 5px 20px;
-        background: rgba(206, 158, 0, 0.637);
+        background: rgba(243, 187, 4, 0.829);
         border-width: 3px;
         border-style: solid;
         border-radius: 35px;
@@ -378,7 +387,7 @@ $redes:(
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
@@ -414,7 +423,7 @@ $redes:(
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
@@ -450,7 +459,7 @@ $redes:(
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Zilla Slab Highlight';
+                font-family: 'Poiret One';
             }
             p{
                 line-height: 30px;
@@ -484,7 +493,7 @@ $redes:(
     padding: 50px 0 50px 0;
     padding-bottom: 25px;
     font-size: 45px;
-    font-family: 'Zilla Slab Highlight';
+    font-family: 'Poiret One';
     color: rgb(245, 202, 63);
 }
 .contenido_about {
@@ -498,7 +507,7 @@ $redes:(
     margin: 0 auto;
     text-align: center;
     color: rgb(175, 135, 2); 
-    font-family: 'Thasadith';
+    font-family: 'Poiret One';
     font-size: 20px;
     }
 }
@@ -597,7 +606,7 @@ $redes:(
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
-        font-family: 'Thasadith';
+        font-family: 'Poiret One';
         color: rgb(255, 254, 254);
         padding: 5px 20px 5px 20px;
         background: rgba(206, 158, 0, 0.637);
