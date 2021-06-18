@@ -9,7 +9,8 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   header a {
     color: white; }
 
@@ -108,11 +109,11 @@ header {
 
 /*BODY DESK*/
 body {
+  background-image: url("../Multimedia/Imagenes/main_background.jpg");
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  background-color: #ffffff;
   background-size: cover; }
 
 .index_body {
@@ -140,57 +141,93 @@ body {
   /*height: 290px;*/ }
 
 /*GALLERY DESK*/
-#main__contenedor__gallery {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 50px; }
+main h1 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 50px;
+  font-family: 'Poiret One';
+  color: #f5ca3f; }
 
-.main__gallery__container {
+.main__galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  gap: 50px;
-  padding: 50px;
-  grid-auto-flow: dense; }
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+  z-index: 2; }
+  .main__galeria a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px black; }
+    .main__galeria a:hover img {
+      transform: scale(1.1);
+      filter: opacity(1); }
+  .main__galeria img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    transition: transform 0.5s;
+    filter: opacity(0.6); }
 
-.gallery__item:nth-child(7) {
-  grid-column-start: span 3; }
-
-.gallery__item:nth-child(20) {
-  grid-column-start: span 2; }
-
-.gallery__item:nth-child(12) {
-  grid-column-start: span 2; }
-
-.gallery__item:nth-child(2) {
-  grid-row-start: span 2; }
-
-.gallery__item:nth-child(8) {
-  grid-row-start: span 2; }
-
-.gallery__item:nth-child(9) {
-  grid-row-start: span 2; }
-
-.gallery__item:nth-child(11) {
-  grid-row-start: span 2; }
-
-.gallery__item:nth-child(16) {
-  grid-row-start: span 2; }
-
-.gallery__img {
+.main__article__lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: transform .3s ease-in-out;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: opacity(0.5); }
-
-.gallery__img:hover {
-  filter: opacity(1); }
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0); }
+  .main__article__lightbox img {
+    width: 75vw;
+    max-height: 90vh;
+    object-fit: cover; }
+  .main__article__lightbox:target {
+    transform: scale(1); }
+  .main__article__lightbox .main__article__close {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    background: black;
+    color: #ffb414;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 20px;
+    border-radius: 50%; }
+  .main__article__lightbox .main__article__next {
+    display: block;
+    background: black;
+    color: #ffb414;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 27px; }
 
 /*SERVICES DESK*/
 #main__contenedorServices {
   display: block;
-  padding-top: 50px;
   padding-bottom: 100px; }
+  #main__contenedorServices h1 {
+    padding-bottom: 50px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Poiret One';
+    color: #f5ca3f; }
 
 .main__contenidoServices {
   display: block;
@@ -234,7 +271,8 @@ body {
       .main__contenidoServices .main__services_1 .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        border-radius: 1% 0 0 1%; }
   .main__contenidoServices .main__services_2 {
     /*display: flex;*/
     text-align: left;
@@ -263,7 +301,9 @@ body {
       .main__contenidoServices .main__services_2 .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0 1% 1% 0; }
   .main__contenidoServices .main__services_3 {
     /*display: flex;*/
     text-align: left;
@@ -292,30 +332,28 @@ body {
       .main__contenidoServices .main__services_3 .carousel-item img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        border-radius: 1% 0 0 1%; }
 
 /*ABOUT DESK*/
 #contenedor_about h1 {
-  font-size: 30px;
-  font-weight: 600;
+  padding-bottom: 50px;
+  font-weight: 400;
   text-align: center;
-  padding: 100px 0 50px 0;
-  padding-bottom: 25px;
   font-size: 50px;
   font-family: 'Poiret One';
   color: #f5ca3f; }
 
-.contenido_about {
+#contenedor_about .contenido_about {
   text-align: center;
   padding-bottom: 100px; }
-
-.text_descripcion p {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  color: black;
-  font-family: 'Poiret One';
-  font-size: 20px; }
+  #contenedor_about .contenido_about .text_descripcion p {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-family: 'Poiret One';
+    font-size: 20px; }
 
 .video_presentacion {
   padding-top: 150px; }
@@ -325,15 +363,19 @@ body {
   width: 90%;
   max-width: 1000px;
   background: rgba(172, 172, 172, 0.2);
-  padding: 40px;
+  padding: 100px;
   margin: 100px auto;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
   #contenedor h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
+    font-family: 'Poiret One';
     text-align: center;
     margin-bottom: 25px;
-    color: black; }
+    color: #f5ca3f;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Poiret One'; }
 
 .contenido {
   display: flex;
@@ -361,7 +403,9 @@ body {
       color: #f5be0a;
       margin-right: 10px; }
     .info .col p {
-      color: black; }
+      color: black;
+      font-family: 'Poiret One';
+      margin: auto 0; }
   .info .redes-sociales {
     width: 100%;
     overflow: hidden;
@@ -372,8 +416,6 @@ body {
       display: flex;
       width: 40px;
       height: 40px;
-      /*background: rgba(206, 158, 0, 0.637);
-            color: rgb(187, 187, 187);*/
       text-decoration: none;
       margin: 5px;
       justify-content: center;
@@ -413,6 +455,7 @@ body {
     font-weight: 600;
     font-size: 15px;
     font-family: 'Poiret One';
+    letter-spacing: 3px;
     color: black;
     padding: 5px 20px 5px 20px;
     background: rgba(243, 187, 4, 0.829);
