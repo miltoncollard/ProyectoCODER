@@ -68,9 +68,10 @@ header {
 
     a{
         color: rgb(253, 253, 253);
+        transition: all .3s ease;
     }
 
-    :hover{
+    &:hover{
         color: white;
         font-family: 'Zilla Slab Highlight', cursive;
         font-size: 60px;

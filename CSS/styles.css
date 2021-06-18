@@ -55,8 +55,9 @@ header {
   list-style: none;
   padding-left: 50px; }
   .index_header_menu_nav ul li a {
-    color: #fdfdfd; }
-  .index_header_menu_nav ul li :hover {
+    color: #fdfdfd;
+    transition: all .3s ease; }
+  .index_header_menu_nav ul li:hover {
     color: white;
     font-family: 'Zilla Slab Highlight', cursive;
     font-size: 60px; }
