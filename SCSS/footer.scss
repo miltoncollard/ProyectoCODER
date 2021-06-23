@@ -3,9 +3,10 @@ footer{
     position: relative;
     bottom: 0;
     .footer_text {
-        color: rgb(0, 0, 0);
-        font-family: 'Poiret One';
+        color: rgb(255, 255, 255);
+        font-family: $font-primary;
         text-align: center;
+        font-size: 12px;
     }
 }
 
@@ -18,8 +19,9 @@ footer{
 
     p {
         color: white;
-        font-family: 'Poiret One';
+        font-family: $font-primary;
         text-align: center;
+        font-size: 12px;
     }
 }
 

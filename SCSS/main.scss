@@ -1,6 +1,7 @@
 /*VARIABLES*/
 $heightini:100px;
 $i:1;
+$font-primary: 'Lexend Peta';
 /*MAPS*/
 $redes:(
     twitter: #55acee,
@@ -13,24 +14,27 @@ $redes:(
 }
 
 
-/*GALLERY DESK*/
+/*GRAL DESK*/
 main{
     h1{
         font-weight: 400;
+        padding-left: 20px;
+        margin-top: 250px;
+        margin-bottom: 300px;
         text-align: center;
-        padding-top: 150px;
-        font-size: 50px;
-        font-family: 'Poiret One';
+        font-size: 60px;
+        font-family: $font-primary;
         color: rgb(245, 202, 63);
     }
 }
 
+/*GALLERY DESK*/
 .main__galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
+    width: 98%;
     margin: auto;
-    grid-gap: 10px;
+    grid-gap: 0px;
     padding: 40px 0;
     overflow: hidden;
     z-index: 2;
@@ -39,7 +43,6 @@ main{
         display: block;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 0 6px rgba(0,0,0, 1);
 
         &:hover{
             img{
@@ -117,21 +120,13 @@ main{
 #main__contenedorServices {
     display: block;
     padding-bottom: 100px;
-
-    h1{
-        padding-bottom: 50px;
-        font-weight: 400;
-        text-align: center;
-        font-size: 50px;
-        font-family: 'Poiret One';
-        color: rgb(245, 202, 63);
-    }
+    background-image: url(../Multimedia/Imagenes/backgroundtest.jpg);
 }
 .main__contenidoServices {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
 
     @for $i from 1 through 3{
         .main__services_#{$i} {display: flex;}
@@ -140,7 +135,9 @@ main{
     .main__services_1{
         /*display: flex;*/
         text-align: left;
-        padding-bottom: 50px;
+        margin-bottom: 300px;
+        transform: scale(0.8); 
+        transition: 2s;
         .main__service1_text{
             display: inline-block;
             width: 30%;
@@ -151,12 +148,12 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px;  
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
         .carousel{
@@ -172,15 +169,22 @@ main{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-radius: 1% 0 0 1%;
+                border-radius: 1%
             }
+        }
+
+        &:hover{
+            transform: scale(1); 
+            transition: 2s;
         }
     }
     /*Services 2 */
     .main__services_2{
         /*display: flex;*/
         text-align: left;
-        padding-bottom: 50px;
+        margin-bottom: 300px;
+        transform: scale(0.8); 
+        transition: 2s;
         .main__service2_text{
             display: inline-block;
             width: 30%;
@@ -191,12 +195,12 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px; 
-                color: rgb(0, 0, 0); 
+                color: rgb(255, 255, 255); 
             }
         }
         .carousel{
@@ -212,8 +216,13 @@ main{
                 height: 100%;
                 object-fit: cover;
                 object-position: center;
-                border-radius:0 1% 1% 0;
+                border-radius: 1%
             }
+        }
+
+        &:hover{
+            transform: scale(1); 
+            transition: 2s;
         }
 
     }
@@ -221,7 +230,9 @@ main{
     .main__services_3{
         /*display: flex;*/
         text-align: left;
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        transform: scale(0.8); 
+        transition: 2s;
         .main__service3_text{
             display: inline-block;
             width: 30%;
@@ -232,12 +243,12 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
                 letter-spacing: 1.5px;  
-                color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
         .carousel{
@@ -252,65 +263,55 @@ main{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-radius: 1% 0 0 1%;
+                border-radius: 1%
             }
+        }
+
+        &:hover{
+            transform: scale(1); 
+            transition: 2s;
         }
     }
 }
 
 /*ABOUT DESK*/
 #contenedor_about {
-    h1 {
-        padding-bottom: 50px;
-        font-weight: 400;
-        text-align: center;
-        font-size: 50px;
-        font-family: 'Poiret One';
-        color: rgb(245, 202, 63);
-    }
 
     .contenido_about {
         text-align: center;
         padding-bottom: 100px;
 
         .text_descripcion{ 
-    
+            transform: scale(0.8); 
+            transition: 2s;
             p {
-            width: 50%;
+            width: 70%;
             margin: 0 auto;
             text-align: center;
-            color: rgb(0, 0, 0); 
-            font-family: 'Poiret One';
+            color: rgb(255, 255, 255); 
+            font-family: $font-primary;
             font-size: 20px;
+            }
+
+            &:hover{
+                transform: scale(1); 
+                transition: 2s;
             }
         }
     }
 }
 .video_presentacion {
     padding-top: 150px;
+    padding-bottom: 200px;
 }
 
 /*CONTACT DESK*/
 #contenedor {
-    width: 90%;
-    max-width: 1000px;
-    background: rgba(172, 172, 172, 0.2);
-    padding: 100px;
-    margin: 100px auto;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
-    
-
-    h1 {
-        font-size: 40px;
-        font-weight: 600;
-        font-family: 'Poiret One';
-        text-align: center;
-        margin-bottom: 25px;
-        color: rgb(245, 202, 63);
-        padding-top: 50px;
-        padding-bottom: 50px;
-        font-family: 'Poiret One';
-    }
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    box-shadow: 2px 2px 5px rgba(255, 196, 4, 0.5);   
 }
 
 .contenido {
@@ -321,16 +322,15 @@ main{
 
 .contenido .info,
 .contenido .formulario {
-    width: 50%;
+    width: 70%;
 }
 
 /* Estilos Info */
 .info {
-    padding-left: 10px;
     margin: auto;
     margin-left: 100px;
     .col {
-        width: 100%;
+        width: 90%;
         display: flex;
         margin-bottom: 15px;
         font-size: 16px;
@@ -344,8 +344,8 @@ main{
         }
 
         p {
-            color: rgb(0, 0, 0);
-            font-family: 'Poiret One';
+            color: rgb(255, 255, 255);
+            font-family: $font-primary;
             margin: auto 0;
         }
     }
@@ -367,7 +367,7 @@ main{
             align-items: center;
             font-size: 18px;
             border-radius: 50%;
-            box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);     
+            box-shadow: 0px 3px 7px rgba(255, 255, 255, 0.4);     
         }
         @each $red, $color in $redes {
             .a-#{$red}{
@@ -385,8 +385,7 @@ main{
 
 /*Estilos Formulario */
 .formulario {
-    padding-left: 10px;
-
+    padding-right: 50px;
     textarea {
         max-width: 100%;
         min-width: 100%;
@@ -398,11 +397,12 @@ main{
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
-        font-family: 'Poiret One';
+        font-family: $font-primary;
         letter-spacing: 3px;
         color: rgb(0, 0, 0);
         padding: 5px 20px 5px 20px;
         background: rgba(243, 187, 4, 0.829);
+        border-color: rgb(255, 196, 4);
         border-width: 3px;
         border-style: solid;
         border-radius: 35px;
@@ -458,7 +458,7 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
@@ -494,7 +494,7 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
@@ -530,7 +530,7 @@ main{
             h3{
                 color: rgb(245, 202, 63);
                 font-size: 30px;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
             }
             p{
                 line-height: 30px;
@@ -564,7 +564,7 @@ main{
     padding: 50px 0 50px 0;
     padding-bottom: 25px;
     font-size: 45px;
-    font-family: 'Poiret One';
+    font-family: $font-primary;
     color: rgb(245, 202, 63);
 }
 .contenido_about {
@@ -578,7 +578,7 @@ main{
     margin: 0 auto;
     text-align: center;
     color: rgb(175, 135, 2); 
-    font-family: 'Poiret One';
+    font-family: $font-primary;
     font-size: 20px;
     }
 }
@@ -646,7 +646,7 @@ main{
             width: 40px;
             height: 40px;
             background: rgba(206, 158, 0, 0.637);
-            color: rgb(187, 187, 187);
+            color: rgb(255, 255, 255);
             margin: 5px;
             justify-content: center;
             align-items: center;
@@ -677,7 +677,7 @@ main{
         text-decoration: none;
         font-weight: 600;
         font-size: 15px;
-        font-family: 'Poiret One';
+        font-family: $font-primary;
         color: rgb(255, 254, 254);
         padding: 5px 20px 5px 20px;
         background: rgba(206, 158, 0, 0.637);
@@ -692,7 +692,7 @@ main{
     margin-bottom: 15px;
     padding: 12px 20px;
     border: 1px solid #999;
-    color: #999;
+    color: rgb(0, 0, 0);
     font-weight: 400;
     outline: 0;
 }

@@ -1,10 +1,11 @@
 $color-primary: rgb(31, 31, 31) ;
+$font-primary: 'Lexend Peta';
 /*HEADER DESK*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $color-primary;
+    
     box-shadow: 0px 3px 7px rgba(0, 0, 0, .4);
     position: fixed;
     left: 0;
@@ -36,16 +37,18 @@ header {
     display: inline-block;
     padding: 0 30px;
     color: white;
-    font-family: 'Poiret One';
-    font-size: 25px;
-    list-style-type: none;
+    font-family: $font-primary;
+    font-size: 17px;
 
     a{
+        text-decoration-color: rgb(248, 223, 0);
         &:hover{
             color: white;
-            text-decoration: none;
         }
     }
+}
+.header__menu_barra{
+    border: orange 5px solid;
 }
 
 /*HEADER INDEX DESK*/ 
@@ -57,24 +60,29 @@ header {
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0);
 }
 .index_header_menu {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .index_header_menu_nav ul li{
-    padding-bottom: 10px;
-    font-family: 'Poiret One';
-    font-size: 50px;
+    padding-bottom: 60px;
+    font-family: $font-primary;
+    font-size: 20px;
     list-style: none;
-    padding-left: 50px;
+    padding-left: 40px;
 
     a{
+        padding: 5px 15px 5px 15px;
         color: rgb(253, 253, 253);
         transition: all .3s ease;
+        border-left: white 2px solid;
+        border-bottom: white 2px solid;
+        border-radius: 1px;
+        background: rgba(175, 174, 174, 0.377);
+        text-decoration-color: rgb(245, 208, 0);
     }
 
     &:hover{
         color: white;
-        font-family: 'Zilla Slab Highlight', cursive;
-        font-size: 60px;
+        font-size: 30px;
     }
 }
 
@@ -85,7 +93,7 @@ header {
         display: inline-block;
         padding: 0 5px;
         color: white;
-        font-family: 'Poiret One';
+        font-family: $font-primary;
         font-size: 19px;
         list-style-type: none;
     
@@ -113,7 +121,7 @@ header {
 
             a{
                 color: white;
-                font-family: 'Poiret One';
+                font-family: $font-primary;
                 font-size: 20px;
 
                 &:hover{
@@ -140,7 +148,7 @@ header {
     width: 100%;
     text-align: center;
     a {
-    font-family: 'Megrim';
+    font-family: $font-primary;
     font-size: 50px;
     list-style: none;
     color: rgb(197, 197, 197);
@@ -148,7 +156,7 @@ header {
 
     :hover{
         color: white;
-        font-family: 'Zilla Slab Highlight';
+        font-family: $font-primary;
         font-size: 50px;
     }
 }

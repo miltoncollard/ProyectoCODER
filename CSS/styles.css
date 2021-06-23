@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Zilla+Slab+Highlight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap");
 /*HEADER DESK*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1f1f1f;
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4);
   position: fixed;
   left: 0;
@@ -30,12 +29,15 @@ header {
   display: inline-block;
   padding: 0 30px;
   color: white;
-  font-family: 'Poiret One';
-  font-size: 25px;
-  list-style-type: none; }
-  .header__menu__nav ul li a:hover {
-    color: white;
-    text-decoration: none; }
+  font-family: "Lexend Peta";
+  font-size: 17px; }
+  .header__menu__nav ul li a {
+    text-decoration-color: #f8df00; }
+    .header__menu__nav ul li a:hover {
+      color: white; }
+
+.header__menu_barra {
+  border: orange 5px solid; }
 
 /*HEADER INDEX DESK*/
 .index_header {
@@ -46,21 +48,26 @@ header {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0); }
 
 .index_header_menu {
-  margin-top: 150px; }
+  margin-top: 50px; }
 
 .index_header_menu_nav ul li {
-  padding-bottom: 10px;
-  font-family: 'Poiret One';
-  font-size: 50px;
+  padding-bottom: 60px;
+  font-family: "Lexend Peta";
+  font-size: 20px;
   list-style: none;
-  padding-left: 50px; }
+  padding-left: 40px; }
   .index_header_menu_nav ul li a {
+    padding: 5px 15px 5px 15px;
     color: #fdfdfd;
-    transition: all .3s ease; }
+    transition: all .3s ease;
+    border-left: white 2px solid;
+    border-bottom: white 2px solid;
+    border-radius: 1px;
+    background: rgba(175, 174, 174, 0.377);
+    text-decoration-color: #f5d000; }
   .index_header_menu_nav ul li:hover {
     color: white;
-    font-family: 'Zilla Slab Highlight', cursive;
-    font-size: 60px; }
+    font-size: 30px; }
 
 /*HEADER TABLET*/
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
@@ -68,7 +75,7 @@ header {
     display: inline-block;
     padding: 0 5px;
     color: white;
-    font-family: 'Poiret One';
+    font-family: "Lexend Peta";
     font-size: 19px;
     list-style-type: none; }
     .header__menu__nav ul li a:hover {
@@ -85,7 +92,7 @@ header {
       transform: translate3d(-75px, 77px, 0px); }
       .header__menu .dropdown .dropdown-menu a {
         color: white;
-        font-family: 'Poiret One';
+        font-family: "Lexend Peta";
         font-size: 20px; }
         .header__menu .dropdown .dropdown-menu a:hover {
           background-color: rgba(109, 109, 109, 0.9);
@@ -99,18 +106,19 @@ header {
     width: 100%;
     text-align: center; }
     .index_header_menu_nav a {
-      font-family: 'Megrim';
+      font-family: "Lexend Peta";
       font-size: 50px;
       list-style: none;
       color: #c5c5c5; }
     .index_header_menu_nav :hover {
       color: white;
-      font-family: 'Zilla Slab Highlight';
+      font-family: "Lexend Peta";
       font-size: 50px; } }
 
 /*BODY DESK*/
 body {
-  background-image: url("../Multimedia/Imagenes/main_background.jpg");
+  /*background-image: url('../Multimedia/Imagenes/main_background.jpg');*/
+  background-color: black;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -141,29 +149,31 @@ body {
   height: 290px;
   /*height: 290px;*/ }
 
-/*GALLERY DESK*/
+/*GRAL DESK*/
 main h1 {
   font-weight: 400;
+  padding-left: 20px;
+  margin-top: 250px;
+  margin-bottom: 300px;
   text-align: center;
-  padding-top: 150px;
-  font-size: 50px;
-  font-family: 'Poiret One';
+  font-size: 60px;
+  font-family: "Lexend Peta";
   color: #f5ca3f; }
 
+/*GALLERY DESK*/
 .main__galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  width: 95%;
+  width: 98%;
   margin: auto;
-  grid-gap: 10px;
+  grid-gap: 0px;
   padding: 40px 0;
   overflow: hidden;
   z-index: 2; }
   .main__galeria a {
     display: block;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 6px black; }
+    overflow: hidden; }
     .main__galeria a:hover img {
       transform: scale(1.1);
       filter: opacity(1); }
@@ -221,20 +231,14 @@ main h1 {
 /*SERVICES DESK*/
 #main__contenedorServices {
   display: block;
-  padding-bottom: 100px; }
-  #main__contenedorServices h1 {
-    padding-bottom: 50px;
-    font-weight: 400;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Poiret One';
-    color: #f5ca3f; }
+  padding-bottom: 100px;
+  background-image: url(../Multimedia/Imagenes/backgroundtest.jpg); }
 
 .main__contenidoServices {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 90%;
   /*Services 1 */
   /*Services 2 */
   /*Services 3 */ }
@@ -247,7 +251,9 @@ main h1 {
   .main__contenidoServices .main__services_1 {
     /*display: flex;*/
     text-align: left;
-    padding-bottom: 50px; }
+    margin-bottom: 300px;
+    transform: scale(0.8);
+    transition: 2s; }
     .main__contenidoServices .main__services_1 .main__service1_text {
       display: inline-block;
       width: 30%;
@@ -258,11 +264,11 @@ main h1 {
       .main__contenidoServices .main__services_1 .main__service1_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Poiret One'; }
+        font-family: "Lexend Peta"; }
       .main__contenidoServices .main__services_1 .main__service1_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: black; }
+        color: white; }
     .main__contenidoServices .main__services_1 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_1 .carousel-item {
@@ -273,11 +279,16 @@ main h1 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 1% 0 0 1%; }
+        border-radius: 1%; }
+    .main__contenidoServices .main__services_1:hover {
+      transform: scale(1);
+      transition: 2s; }
   .main__contenidoServices .main__services_2 {
     /*display: flex;*/
     text-align: left;
-    padding-bottom: 50px; }
+    margin-bottom: 300px;
+    transform: scale(0.8);
+    transition: 2s; }
     .main__contenidoServices .main__services_2 .main__service2_text {
       display: inline-block;
       width: 30%;
@@ -288,11 +299,11 @@ main h1 {
       .main__contenidoServices .main__services_2 .main__service2_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Poiret One'; }
+        font-family: "Lexend Peta"; }
       .main__contenidoServices .main__services_2 .main__service2_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: black; }
+        color: white; }
     .main__contenidoServices .main__services_2 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_2 .carousel-item {
@@ -304,11 +315,16 @@ main h1 {
         height: 100%;
         object-fit: cover;
         object-position: center;
-        border-radius: 0 1% 1% 0; }
+        border-radius: 1%; }
+    .main__contenidoServices .main__services_2:hover {
+      transform: scale(1);
+      transition: 2s; }
   .main__contenidoServices .main__services_3 {
     /*display: flex;*/
     text-align: left;
-    padding-bottom: 50px; }
+    margin-bottom: 50px;
+    transform: scale(0.8);
+    transition: 2s; }
     .main__contenidoServices .main__services_3 .main__service3_text {
       display: inline-block;
       width: 30%;
@@ -319,11 +335,11 @@ main h1 {
       .main__contenidoServices .main__services_3 .main__service3_text h3 {
         color: #f5ca3f;
         font-size: 30px;
-        font-family: 'Poiret One'; }
+        font-family: "Lexend Peta"; }
       .main__contenidoServices .main__services_3 .main__service3_text p {
         line-height: 30px;
         letter-spacing: 1.5px;
-        color: black; }
+        color: white; }
     .main__contenidoServices .main__services_3 .carousel {
       width: 70%; }
     .main__contenidoServices .main__services_3 .carousel-item {
@@ -334,49 +350,40 @@ main h1 {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 1% 0 0 1%; }
+        border-radius: 1%; }
+    .main__contenidoServices .main__services_3:hover {
+      transform: scale(1);
+      transition: 2s; }
 
 /*ABOUT DESK*/
-#contenedor_about h1 {
-  padding-bottom: 50px;
-  font-weight: 400;
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Poiret One';
-  color: #f5ca3f; }
-
 #contenedor_about .contenido_about {
   text-align: center;
   padding-bottom: 100px; }
-  #contenedor_about .contenido_about .text_descripcion p {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    color: black;
-    font-family: 'Poiret One';
-    font-size: 20px; }
+  #contenedor_about .contenido_about .text_descripcion {
+    transform: scale(0.8);
+    transition: 2s; }
+    #contenedor_about .contenido_about .text_descripcion p {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-family: "Lexend Peta";
+      font-size: 20px; }
+    #contenedor_about .contenido_about .text_descripcion:hover {
+      transform: scale(1);
+      transition: 2s; }
 
 .video_presentacion {
-  padding-top: 150px; }
+  padding-top: 150px;
+  padding-bottom: 200px; }
 
 /*CONTACT DESK*/
 #contenedor {
-  width: 90%;
-  max-width: 1000px;
-  background: rgba(172, 172, 172, 0.2);
-  padding: 100px;
-  margin: 100px auto;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); }
-  #contenedor h1 {
-    font-size: 40px;
-    font-weight: 600;
-    font-family: 'Poiret One';
-    text-align: center;
-    margin-bottom: 25px;
-    color: #f5ca3f;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'Poiret One'; }
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+  box-shadow: 2px 2px 5px rgba(255, 196, 4, 0.5); }
 
 .contenido {
   display: flex;
@@ -385,15 +392,14 @@ main h1 {
 
 .contenido .info,
 .contenido .formulario {
-  width: 50%; }
+  width: 70%; }
 
 /* Estilos Info */
 .info {
-  padding-left: 10px;
   margin: auto;
   margin-left: 100px; }
   .info .col {
-    width: 100%;
+    width: 90%;
     display: flex;
     margin-bottom: 15px;
     font-size: 16px;
@@ -404,8 +410,8 @@ main h1 {
       color: #f5be0a;
       margin-right: 10px; }
     .info .col p {
-      color: black;
-      font-family: 'Poiret One';
+      color: white;
+      font-family: "Lexend Peta";
       margin: auto 0; }
   .info .redes-sociales {
     width: 100%;
@@ -423,7 +429,7 @@ main h1 {
       align-items: center;
       font-size: 18px;
       border-radius: 50%;
-      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.4); }
+      box-shadow: 0px 3px 7px rgba(255, 255, 255, 0.4); }
     .info .redes-sociales .a-twitter {
       background: #55acee;
       color: white; }
@@ -445,7 +451,7 @@ main h1 {
 
 /*Estilos Formulario */
 .formulario {
-  padding-left: 10px; }
+  padding-right: 50px; }
   .formulario textarea {
     max-width: 100%;
     min-width: 100%;
@@ -455,11 +461,12 @@ main h1 {
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    font-family: 'Poiret One';
+    font-family: "Lexend Peta";
     letter-spacing: 3px;
     color: black;
     padding: 5px 20px 5px 20px;
     background: rgba(243, 187, 4, 0.829);
+    border-color: #ffc404;
     border-width: 3px;
     border-style: solid;
     border-radius: 35px; }
@@ -508,7 +515,7 @@ main h1 {
         .main__contenidoServices .main__services_1 .main__service1_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Poiret One'; }
+          font-family: "Lexend Peta"; }
         .main__contenidoServices .main__services_1 .main__service1_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -535,7 +542,7 @@ main h1 {
         .main__contenidoServices .main__services_2 .main__service2_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Poiret One'; }
+          font-family: "Lexend Peta"; }
         .main__contenidoServices .main__services_2 .main__service2_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -561,7 +568,7 @@ main h1 {
         .main__contenidoServices .main__services_3 .main__service3_text h3 {
           color: #f5ca3f;
           font-size: 30px;
-          font-family: 'Poiret One'; }
+          font-family: "Lexend Peta"; }
         .main__contenidoServices .main__services_3 .main__service3_text p {
           line-height: 30px;
           letter-spacing: 1.5px;
@@ -584,7 +591,7 @@ main h1 {
     padding: 50px 0 50px 0;
     padding-bottom: 25px;
     font-size: 45px;
-    font-family: 'Poiret One';
+    font-family: "Lexend Peta";
     color: #f5ca3f; }
   .contenido_about {
     text-align: center;
@@ -594,7 +601,7 @@ main h1 {
     margin: 0 auto;
     text-align: center;
     color: #af8702;
-    font-family: 'Poiret One';
+    font-family: "Lexend Peta";
     font-size: 20px; }
   .video_presentacion {
     padding-top: 100px; }
@@ -639,7 +646,7 @@ main h1 {
         width: 40px;
         height: 40px;
         background: rgba(206, 158, 0, 0.637);
-        color: #bbbbbb;
+        color: white;
         margin: 5px;
         justify-content: center;
         align-items: center;
@@ -671,7 +678,7 @@ main h1 {
       text-decoration: none;
       font-weight: 600;
       font-size: 15px;
-      font-family: 'Poiret One';
+      font-family: "Lexend Peta";
       color: #fffefe;
       padding: 5px 20px 5px 20px;
       background: rgba(206, 158, 0, 0.637);
@@ -684,7 +691,7 @@ main h1 {
     margin-bottom: 15px;
     padding: 12px 20px;
     border: 1px solid #999;
-    color: #999;
+    color: black;
     font-weight: 400;
     outline: 0; } }
 
@@ -693,9 +700,10 @@ footer {
   position: relative;
   bottom: 0; }
   footer .footer_text {
-    color: black;
-    font-family: 'Poiret One';
-    text-align: center; }
+    color: white;
+    font-family: "Lexend Peta";
+    text-align: center;
+    font-size: 12px; }
 
 .index_footer {
   position: absolute;
@@ -705,8 +713,9 @@ footer {
   background: rgba(178, 180, 180, 0.2); }
   .index_footer p {
     color: white;
-    font-family: 'Poiret One';
-    text-align: center; }
+    font-family: "Lexend Peta";
+    text-align: center;
+    font-size: 12px; }
 
 /*FOOTER TABLET*/
 /*CSS - FOOTER MOBILE*/
