@@ -31,6 +31,27 @@ footer{
 }
 
 /*CSS - FOOTER MOBILE*/
-@media only screen and (mmax-width:699px){
+@media only screen and (max-width:699px){
 
+.index_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        text-align: center;
+        margin: 0;
+    }
+}
+
+footer{
+    background-color: none;
+    .footer_text{
+        background-color: none;
+
+        p{
+            background-color: none;
+        }
+    }
+}
 }

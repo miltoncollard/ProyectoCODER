@@ -151,6 +151,9 @@ header {
 /*HEADER MOBILE*/
 @media only screen and (max-width:699px){
 
+header{
+    background: rgba(29,29,29,0.9);
+}
 .header__menu{
     .dropdown{
         display: block;
@@ -158,19 +161,18 @@ header {
             left: 0px !important;
         }
         .dropdown-menu{
-            top: 0px;
-            padding-top: 25px;
+            margin-top: 101px;
             background: rgba(29, 29, 29, 0.9);
             transform: translate3d(-75px, 77px, 0px);
             position: fixed !important;
-            left: -55% !important;
+            left: -100% !important;
             transform: translateX(0) !important;
-            height: 100vh;
+            height: 85%;
             border: none !important;
             transition: all 0.5s ease;
             display: block !important;
             border-radius: 0px;
-            width: 50%;
+            width: 80%;
             a{
                 color: white;
                 font-family: $font-primary;
@@ -207,21 +209,22 @@ header {
     }
 }
 
-/*INDEX HEADER MOPBILE*/
-.index_header_menu_nav{
+/*INDEX HEADER MOBILE*/
+.index_header{
     width: 100%;
-    text-align: center;
-    a {
-    font-family: $font-primary;
-    font-size: 50px;
-    list-style: none;
-    color: rgb(197, 197, 197);
-    }
-
-    :hover{
-        color: white;
+    height: 100%;
+    background: rgba(29, 29, 29, 0.1);
+    .index_header_menu_nav{
+        width: 100%;
+        height: 70%;
+        margin-top: 50px;
+        text-align: center;
+        a {
         font-family: $font-primary;
-        font-size: 50px;
+        font-size: 20px;
+        list-style: none;
+        color: rgb(255, 255, 255);
+        }
     }
 }
 
