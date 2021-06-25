@@ -26,6 +26,10 @@ main{
         font-family: $font-primary;
         color: rgb(245, 202, 63);
     }
+
+    .main__mobile__scroll__down{
+        display: none;
+    }
 }
 
 /*GALLERY DESK*/
@@ -429,6 +433,33 @@ main{
 
 /*CSS - MAIN MOBILE*/
 @media only screen and (max-width:699px){
+
+/*GALLERY MOBILE*/
+main{
+    .main__mobile__scroll__down{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: -20px;
+        img {
+            animation: MoveUpDown 2s linear infinite;
+            position: absolute;
+            width: 40px;
+            @keyframes MoveUpDown {
+                0%, 100% {
+                    bottom: 0;
+                }
+                50% {
+                    bottom: 100px;
+                }
+            }
+        }
+    }
+
+}
+
+
 
 /*SERVICES MOBILE*/
 #main__contenedorServices {
