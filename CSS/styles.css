@@ -188,14 +188,6 @@ body {
   background-image: url(../Multimedia/Imagenes/background_2.jpg);
   background-size: cover; }
 
-.index_body_white {
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-image: url(../Multimedia/Imagenes/varios/IMG_20210308_101807467.jpg);
-  background-size: cover; }
-
 /*BODY TABLET*/
 /*BODY MOBILE*/
 /*VARIABLES*/
@@ -237,6 +229,7 @@ main .main__mobile__scroll__down {
       filter: opacity(1); }
   .main__galeria img {
     width: 100%;
+    height: 100%;
     vertical-align: top;
     object-fit: cover;
     transition: transform 0.5s;
@@ -247,7 +240,7 @@ main .main__mobile__scroll__down {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  transition: transform .3s ease-in-out;
+  transition: transform .5s ease-in-out;
   width: 100%;
   height: 100vh;
   z-index: 1000;
@@ -257,7 +250,7 @@ main .main__mobile__scroll__down {
   transform: scale(0); }
   .main__article__lightbox img {
     width: 75vw;
-    max-height: 90vh;
+    max-height: 100vh;
     object-fit: cover; }
   .main__article__lightbox:target {
     transform: scale(1); }
